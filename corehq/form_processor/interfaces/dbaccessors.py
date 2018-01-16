@@ -239,7 +239,7 @@ class AbstractCaseAccessor(six.with_metaclass(ABCMeta)):
         raise NotImplementedError
 
     @abstractmethod
-    def get_reverse_indexed_cases(domain, case_ids):
+    def get_reverse_indexed_cases(domain, case_ids, case_types=None, is_closed=None):
         raise NotImplementedError
 
     @abstractmethod
